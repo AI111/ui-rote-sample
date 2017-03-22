@@ -1,0 +1,84 @@
+$module-h: 15%;
+$module-w: 20%;
+body{
+  padding: 0;
+  margin: 0;
+}
+.task1{
+  display: flex;
+  flex-direction: column;
+  .scrollable-container{
+    overflow-y: scroll;
+    width: 200px;
+    height: 500px;
+    margin: auto;
+  }
+}
+.task2{
+  width: 100%;
+  height: calc( 100% - 50px);
+  position: absolute;
+}
+.module-base{
+  position: absolute;
+  border: 1px solid black ;
+  background: grey;
+  margin: 0;
+  padding: 0;
+}
+.module-top{
+
+  width: 100%;
+  height: $module-h;
+  top: 0;
+  @extend .module-base;
+}
+.module-right{
+  width: $module-w;
+  @extend .module-base;
+  right: 0;
+  top: $module-h;
+  bottom: $module-h;
+}
+.module-bottom{
+  width: 100%;
+  height: $module-h;
+  @extend .module-base;
+  bottom: 0;
+}
+.module-left{
+  width: $module-w;
+  @extend .module-base;
+  left:0;
+  top: $module-h;
+  bottom: $module-h;
+}
+.menu{
+  height: 50px;
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+
+  li {
+    float: left;
+  }
+
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  li a:hover {
+    background-color: cornflowerblue;
+  }
+  .active{
+    background-color: cornflowerblue;
+  }
+}

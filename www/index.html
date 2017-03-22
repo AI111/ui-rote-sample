@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <base href="/">
+
+    <meta charset="utf-8">
+
+    <title></title>
+
+
+    <link href="css/style.css" rel="stylesheet">
+    <!--<link href="css/fonts/stylesheet.css" rel="stylesheet">-->
+
+    <!-- bower:js -->
+    <script src="lib/angular/angular.js"></script>
+    <script src="lib/angular-ui-router/release/angular-ui-router.js"></script>
+    <!-- endbower -->
+    <!-- inject:js -->
+
+    <script src="app/task1/task1.module.js"></script>
+
+    <script src="app/task2/task2.module.js"></script>
+
+    <script src="app/app.js"></script>
+
+    <script src="app/templates.js"></script>
+
+    <script src="app/services/task1.service.js"></script>
+
+    <script src="app/services/task2.service.js"></script>
+
+    <script src="app/task1/custom-scroll.directive.js"></script>
+
+    <script src="app/task1/task1.controller.js"></script>
+
+    <script src="app/task1/task1.route.js"></script>
+
+    <script src="app/model/module-congig.model.js"></script>
+
+    <script src="app/model/scroll-data.model.js"></script>
+
+    <script src="app/task2/child.module.component.js"></script>
+
+    <script src="app/task2/parent.module.component.js"></script>
+
+    <script src="app/task2/task2.controller.js"></script>
+
+    <script src="app/task2/task2.route.js"></script>
+
+    <!-- endinject -->
+</head>
+<body ng-app="app">
+<header class="menu">
+    <ul>
+        <li>
+            <a ui-sref="task1" ui-sref-active="active">
+                Scroll
+            </a>
+        </li>
+        <li>
+            <a ui-sref="state1" ui-sref-active="active">
+                State1
+            </a>
+        </li>
+        <li>
+            <a ui-sref="state2" ui-sref-active="active">
+                State2
+            </a>
+        </li>
+    </ul>
+
+</header>
+<div ui-view></div>
+
+</body>
+</html>

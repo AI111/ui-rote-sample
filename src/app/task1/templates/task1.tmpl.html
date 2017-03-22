@@ -1,0 +1,48 @@
+<div class="task1">
+    <div on-scroll="vm.onScroll(ev)" id="scrolledText" class="scrollable-container">Lorem ipsum dolor sit amet, consectetur
+        adipiscing elit. Ut laoreet diam tempus tristique rhoncus. Aenean
+        tristique sem quis leo pulvinar hendrerit. Quisque a fermentum mauris. Cras ultrices, sem et convallis lobortis,
+        tellus nunc ultricies risus, non dictum est nibh id elit. Fusce dictum porttitor elementum. Duis tincidunt elit
+        mi, non porta ligula feugiat sagittis. Morbi sit amet ex consequat, eleifend elit in, vulputate lectus. Duis id
+        ipsum bibendum, placerat ex eu, gravida nibh. Curabitur quis justo pharetra, euismod dui vitae, cursus mi.
+        Maecenas interdum turpis nec auctor lobortis. Nunc nisl velit, tempus in consequat fringilla, sollicitudin
+        maximus purus. Mauris dictum massa vitae nulla pharetra, sed vehicula est sollicitudin. Curabitur et vestibulum
+        ex, at blandit nunc. Suspendisse eget magna ante.
+
+        Ut at dictum nunc. Nam condimentum consectetur sem at eleifend. Mauris laoreet ipsum ut dolor scelerisque
+        congue. Quisque vitae metus hendrerit, scelerisque tellus quis, dictum quam. Orci varius natoque penatibus et
+        magnis dis parturient montes, nascetur ridiculus mus. Etiam ligula leo, condimentum nec ipsum vel, sagittis
+        fermentum libero. Vivamus ut vehicula lectus. Proin congue, urna ut consectetur placerat, lectus erat fringilla
+        purus, at auctor tellus dui et nulla.
+
+        Donec scelerisque mattis odio, vitae placerat dui iaculis quis. Nullam et facilisis enim. Aenean volutpat
+        dapibus semper. Sed a accumsan metus, imperdiet semper lectus. Pellentesque habitant morbi tristique senectus et
+        netus et malesuada fames ac turpis egestas. Ut consectetur velit quis neque consectetur lobortis. Maecenas sed
+        velit at leo auctor suscipit tempor vel metus. Vestibulum convallis leo nec vulputate aliquam. Ut eu velit
+        ipsum. Aliquam a mattis massa. Pellentesque consectetur rutrum dui, nec accumsan lorem mollis nec. Sed eu ex vel
+        lorem mollis varius. Morbi mattis ligula quam, dictum mollis velit laoreet vel. Curabitur vel magna id ipsum
+        faucibus pellentesque.
+
+        Fusce ultricies tortor turpis, non molestie justo semper id. Quisque dictum massa et enim cursus tristique quis
+        vel diam. Donec gravida mattis diam, sed eleifend ante scelerisque interdum. Curabitur elementum, erat convallis
+        tempor lacinia, leo lacus volutpat massa, non pulvinar nunc ligula id quam. Integer consectetur a orci eget
+        dictum. Fusce vitae ultrices est, rhoncus luctus dolor. Maecenas mattis justo tellus, ac consectetur ipsum
+        finibus id. Nam eleifend, erat nec egestas maximus, massa mi dignissim massa, at ullamcorper quam lorem a leo.
+        Donec a laoreet risus, non viverra libero. Duis porta est non sem accumsan imperdiet. Suspendisse cursus, diam
+        eu pharetra dapibus, metus tellus molestie sapien, nec tincidunt elit massa et diam. Praesent dictum risus eget
+        nisi pharetra rhoncus. Vivamus eros magna, consectetur et tortor eget, convallis finibus est.
+
+        Vivamus luctus velit at leo pulvinar, sit amet malesuada magna tristique. Proin eget faucibus massa. Quisque
+        maximus tellus quis fermentum placerat. Maecenas ut odio efficitur sem pulvinar lobortis. Orci varius natoque
+        penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean blandit purus tellus, placerat
+        vehicula erat sagittis in. Ut urna dui, dictum at ante vitae, vestibulum eleifend augue. Suspendisse potenti. In
+        ex lectus, eleifend at interdum a, elementum a enim. Fusce ultricies pellentesque dignissim.
+    </div>
+    <p>
+    <ul class="log">
+        <li ng-repeat="event in vm.logData">
+           <span>scrollTop: <strong>{{event.scrollTop}}</strong> time: {{event.timeStamp}}</span>
+        </li>
+    </ul>
+    </p>
+</div>
